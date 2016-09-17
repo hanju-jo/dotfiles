@@ -1,0 +1,12 @@
+[user]
+	name = Hanju Jo
+	email = gkswn121@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
