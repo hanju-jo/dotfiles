@@ -12,9 +12,6 @@ Plug 'tpope/vim-fugitive'
 " Status/tabline for vim
 Plug 'bling/vim-airline'
 
-" A Code-completion engine
-Plug 'valloric/youcompleteme', { 'do': './install.py' }
-
 call plug#end()
 
 " Use jellybeans theme
@@ -37,8 +34,12 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+
+set autoindent
+set cindent
+set shiftwidth=4
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -66,11 +67,6 @@ set showmode
 set title
 " Show the (partial) command as it’s being typed
 set showcmd
-" Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
@@ -98,19 +94,18 @@ endif
 
 " Plugin Settings
 
-" <YouCompleteMe> {{
+""""""""""""""""""""""""""""
+" Plugin: YouCompleteMe
+""""""""""""""""""""""""""""
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
+"To avoid conflict snippets
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_auto_trigger = 0
-let g:ycm_python_binary_path = '/usr/local/bin/python3'
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>gg :YcmCompleter GoToImprecise<CR>
 nnoremap <leader>d :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>t :YcmCompleter GetType<CR>
 nnoremap <leader>p :YcmCompleter GetParent<CR>
-" }}
