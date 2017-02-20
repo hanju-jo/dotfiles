@@ -83,6 +83,9 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias typora="open -a typora"
+
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
