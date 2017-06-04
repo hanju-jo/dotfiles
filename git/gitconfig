@@ -1,0 +1,22 @@
+[user]
+  name = Hanju Jo
+  email = dev.hanju.jo@gmail.com
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+  autocrlf = input
+
+[color]
+  ui = auto
+
+[format]
+	pretty = oneline
+
+[push]
+	default = simple
+
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
