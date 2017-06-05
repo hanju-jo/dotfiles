@@ -9,7 +9,6 @@ tap 'caskroom/cask'
 cask_args appdir: '/Applications'
 
 cask 'alfred'
-cask 'boostnote'
 cask 'docker'
 cask 'evernote'
 cask 'firefox'
