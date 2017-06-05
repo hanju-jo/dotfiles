@@ -1,6 +1,12 @@
 # My Personal Dotfiles
 
-## Installation
+## Usage
+
+### Step 1. Install Command Line Tools
+
+```bash
+$ xcode-select --install
+```
 
 ```bash
 $ git clone https://github.com/AWEEKJ/dotfiles.git

@@ -1,9 +1,6 @@
 #!/bin/sh
 # Thanks to appkr's dotfiles https://github.com/appkr/dotfiles
 
-# Install Command Line Tools
-xcode-select --install
-
 #-------------------------------------------------------------------------------
 # Homebrew
 #-------------------------------------------------------------------------------
