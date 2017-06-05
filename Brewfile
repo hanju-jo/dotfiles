@@ -17,7 +17,6 @@ cask 'intellij-idea'
 cask 'iterm2'
 cask 'karabiner'
 cask 'keepingyouawake'
-cask 'movist'
 cask 'pycharm'
 cask 'slack'
 cask 'spectacle'
@@ -29,6 +28,7 @@ mas 'GIPHY CAPTURE', id: 668208984
 mas 'Hancom Office Viewer', id: 416746898
 mas 'Kakaotalk', id: 869223134
 mas 'Keynote', id: 409183694
+mas 'Movist', id: 461788075
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Todoist', id: 585829637
