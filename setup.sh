@@ -12,6 +12,7 @@ fi
 
 # Update Homebrew and install applications with bundle
 brew update
+brew install mas
 brew tap homebrew/bundle
 brew bundle --file=$(pwd)/Brewfile
 brew cleanup
