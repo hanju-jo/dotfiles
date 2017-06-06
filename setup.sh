@@ -78,13 +78,6 @@ unzip master.zip && mv alias-tips-master ~/.oh-my-zsh/custom/plugins/alias-tips 
 source $HOME/.zshrc
 
 #-------------------------------------------------------------------------------
-# Restore setting files with mackup
-# https://github.com/lra/mackup
-#-------------------------------------------------------------------------------
-
-mackup restore
-
-#-------------------------------------------------------------------------------
 # Set OS X preferences
 # We will run this last because this will reload the shell
 #-------------------------------------------------------------------------------
