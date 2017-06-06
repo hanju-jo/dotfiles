@@ -76,6 +76,12 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Mouse: speed up mouse tracking
 defaults write -g com.apple.mouse.scaling 1.5
 
+# Keyboard: change keyboard shortcut
+# (To export your own files do this command,
+# defaults export com.apple.symbolichotkeys -> symbolichotkeys.plist
+# See https://web.archive.org/web/20141112224103/http://hintsforums.macworld.com/showthread.php?t=114785)
+defaults import com.apple.symbolichotkeys symbolichotkeys.plist
+
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
