@@ -19,9 +19,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #-------------------------------------------------------------------------------
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "HANJU's MacBook Pro"
-sudo scutil --set HostName "HANJU-MacBookPro"
-sudo scutil --set LocalHostName "HANJU-MacBookPro"
+sudo scutil --set ComputerName "Zanzz-Book"
+sudo scutil --set HostName "Zanzz-Book"
+sudo scutil --set LocalHostName "Zanzz-Book"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
