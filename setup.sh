@@ -56,7 +56,7 @@ done
 # Check if zsh is installed. If it is:
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
   # Install Oh My Zsh if it isn't already present
-  if [[ ! -d $dir/oh-my-zsh/ ]]; then
+  if [[ ! -d $HOME/.oh-my-zsh/ ]]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   fi
   # Set the default shell to zsh if it isn't currently set to zsh
@@ -69,6 +69,10 @@ fi
 
 # Install spaceship theme
 npm install -g spaceship-zsh-theme
+
+# Install plugin 'alias-tips'
+wget https://github.com/djui/alias-tips/archive/master.zip
+unzip master.zip && mv alias-tips-master ~/.oh-my-zsh/custom/plugins/alias-tips && rm master.zip
 
 # Set zsh preferences
 source $HOME/.zshrc
