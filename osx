@@ -76,6 +76,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Mouse: speed up mouse tracking
 defaults write -g com.apple.mouse.scaling 1.5
 
+# Mouse: Enable mouse right click
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
 # Keyboard: change keyboard shortcut
 # (To export your own files do this command,
 # defaults export com.apple.symbolichotkeys -> symbolichotkeys.plist
