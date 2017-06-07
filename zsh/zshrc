@@ -109,3 +109,5 @@ for file in "${files[@]}"; do
 done;
 
 unset files file;
+
+source "/Users/zanzz/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
