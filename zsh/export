@@ -19,3 +19,4 @@ export LANG=en_US.UTF-8
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1

@@ -11,6 +11,7 @@ brew 'heroku-toolbelt'
 brew 'mackup'
 brew 'tmux'
 brew 'tree'
+brew 'vim'
 brew 'wget'
 
 #-------------------------------------------------------------------------------
@@ -44,6 +45,7 @@ mas 'Movist', id: 461788075
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Todoist', id: 585829637
+mas 'Tomato One', id: 907364780
 mas 'TweetDeck', id: 485812721
 
 #-------------------------------------------------------------------------------

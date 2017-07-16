@@ -34,4 +34,4 @@ npm-debug.log
 .idea
 
 # Database
-*.sqlite
+db.sqlite3
