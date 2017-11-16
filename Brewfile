@@ -13,6 +13,7 @@ brew 'tmux'
 brew 'tree'
 brew 'vim'
 brew 'wget'
+brew 'jq'
 
 #-------------------------------------------------------------------------------
 # Applications
@@ -66,3 +67,9 @@ brew 'python3', args:['with-sphinx-doc']
 # Ruby
 brew 'ruby'
 brew 'rbenv'
+
+# Go
+brew 'go'
+
+# Rust
+brew 'rust'
