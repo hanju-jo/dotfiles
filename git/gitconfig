@@ -30,6 +30,10 @@
   trustExitCode = true
 
 [alias]
+  ls = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate
+  tag-date = "!f() { DATE=`date '+%y%m%d'`; git tag $DATE; }; f"
+  tag-datetime = "!f() { DATE=`date '+%y%m%d-%H%M%S'`; git tag $DATE; }; f"
+
   # https://gist.github.com/gnarf/5406589
   pr = "!f() { git fetch -fu ${2:-$(git remote |grep ^upstream || echo origin)} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
   pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
