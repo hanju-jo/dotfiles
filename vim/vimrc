@@ -10,9 +10,8 @@ Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
-" Use jellybeans theme
 set background=dark
-colorscheme jellybeans
+colorscheme Tomorrow-Night-Eighties
 
 " Make Vim more useful
 set nocompatible
