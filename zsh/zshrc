@@ -110,4 +110,24 @@ done;
 
 unset files file;
 
+#-------------------------------------------------------------------------------
+# Bullet Train Theme Settings
+#-------------------------------------------------------------------------------
 source "/Users/zanzz/.oh-my-zsh/custom/themes/bullet-train.zsh-theme"
+
+BULLETTRAIN_PROMPT_ORDER=(
+  time
+  dir
+  git
+  virtualenv
+  nvm
+  go
+  status
+)
+BULLETTRAIN_TIME_BG=black
+BULLETTRAIN_TIME_FG=white
+BULLETTRAIN_STATUS_EXIT_SHOW=true
+BULLETTRAIN_VIRTUALENV_FG=black
+BULLETTRAIN_VIRTUALENV_PREFIX="🐍 "
+BULLETTRAIN_NVM_FG=black
+BULLETTRAIN_DIR_EXTENDED=0
