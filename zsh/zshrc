@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # * ~/.extra can be used for other settings you don’t want to commit.
 #-------------------------------------------------------------------------------
 
-files=("$HOME/.path" "$HOME/.export" "$HOME/.alias" "$HOME/.function");
+files=("$HOME/.path" "$HOME/.export" "$HOME/.alias");
 
 for file in "${files[@]}"; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
