@@ -9,7 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #-------------------------------------------------------------------------------
 
-ZSH_THEME="spaceship"
+ZSH_THEME="bullet-train"
 
 #-------------------------------------------------------------------------------
 # Uncomment the following line to use case-sensitive completion.
@@ -110,4 +110,4 @@ done;
 
 unset files file;
 
-source "/Users/zanzz/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "/Users/zanzz/.oh-my-zsh/custom/themes/bullet-train.zsh-theme"

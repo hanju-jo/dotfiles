@@ -15,6 +15,7 @@ brew update
 brew install mas
 brew tap homebrew/bundle
 brew bundle --file=$(pwd)/Brewfile
+brew bundle --file=brew/fonts
 brew cleanup
 brew cask cleanup
 
@@ -37,7 +38,8 @@ else
 fi
 
 # Install spaceship theme
-npm install -g spaceship-zsh-theme
+wget https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
+mv bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
 
 # Install plugin 'alias-tips'
 wget https://github.com/djui/alias-tips/archive/master.zip
