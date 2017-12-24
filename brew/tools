@@ -8,3 +8,7 @@ brew 'tree'
 brew 'vim'
 brew 'wget'
 brew 'zsh'
+
+# High Sierra doesn't have the telnet by default
+brew tap theeternalsw0rd/telnet
+brew install telnet
