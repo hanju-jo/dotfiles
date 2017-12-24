@@ -26,7 +26,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 # Go
 #-------------------------------------------------------------------------------
 
-export GOROOT="/usr/local/go"
+export GOROOT="/usr/local/Cellar/go/1.9.2/libexec"
 export PATH="$GOROOT/bin:$PATH"
 export GOPATH="$HOME/workspace/go"
 export PATH="$GOPATH/bin:$PATH"

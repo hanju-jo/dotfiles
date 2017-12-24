@@ -8,7 +8,7 @@
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #-------------------------------------------------------------------------------
 
-alias vim='/usr/local/Cellar/vim/8.0.0705/bin/vim'
+alias vim='/usr/local/Cellar/vim/8.0.1400_1/bin/vim'
 
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
@@ -16,6 +16,8 @@ alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 # Open apps
 alias typora="open -a typora"
 alias vscode="open -a visual\ studio\ code"
+alias goland="open -a goland"
+alias pycharm="open -a pycharm"
 
 #-------------------------------------------------------------------------------
 # Some more alias to avoid making mistakes
