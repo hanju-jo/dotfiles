@@ -30,35 +30,7 @@ mv bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
 wget https://github.com/djui/alias-tips/archive/master.zip
 unzip master.zip && mv alias-tips-master ~/.oh-my-zsh/custom/plugins/alias-tips && rm master.zip
 
-#-------------------------------------------------------------------------------
-# Symlinks files to dotfiles
-#-------------------------------------------------------------------------------
-
-declare -a FILES_TO_SYMLINK=(
-  
-  'git/gitattributes'
-  'git/gitconfig'
-  'git/gitignore'
-
-  'mackup.cfg'
-  
-  'osx'
-  
-  'vim/vimrc'
-
-  'zsh/alias'
-  'zsh/export'
-  'zsh/function'
-  'zsh/path'
-  'zsh/zshrc'
-
-)
-
-for i in ${FILES_TO_SYMLINK[@]}; do
-  sourceFile="$(pwd)/$i"
-  targetFile="$HOME/.$(printf "%s" "$i" | sed "s/.*\/\(.*\)/\1/g")"
-  ln -fs $sourceFile $targetFile
-done
+bash scripts/symlink.sh  # symlinks files to dotfiles
 
 #-------------------------------------------------------------------------------
 # Set zsh preferences
