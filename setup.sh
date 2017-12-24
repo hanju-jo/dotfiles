@@ -1,23 +1,8 @@
 #!/bin/sh
 # Thanks to appkr's dotfiles https://github.com/appkr/dotfiles
 
-#-------------------------------------------------------------------------------
-# Homebrew
-#-------------------------------------------------------------------------------
 
-# If there is not Homebrew than install it
-if test ! $(which brew); then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-# Update Homebrew and install applications with bundle
-brew update
-brew install mas
-brew tap homebrew/bundle
-brew bundle --file=$(pwd)/Brewfile
-brew bundle --file=brew/fonts
-brew cleanup
-brew cask cleanup
+bash scripts/brew.sh  # homebrew
 
 #-------------------------------------------------------------------------------
 # Install zsh and set Oh-my-zsh
