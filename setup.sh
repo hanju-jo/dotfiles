@@ -3,7 +3,7 @@
 
 # Installing order is the matter for these scripts
 bash scripts/xcode_clt.sh  # Xcode Command Line Tools
-bash scripts/brew.sh  # homebrew
+bash brew/install.sh  # homebrew
 bash scripts/zsh.sh  # zsh and oh-my-zsh
 bash scripts/symlink.sh  # symlinks files to dotfiles
 bash scripts/kr_backquote.sh  # For Korean keybindings, use backquote(`) instead of KRW sign(₩)

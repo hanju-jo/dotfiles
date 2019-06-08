@@ -7,7 +7,6 @@ declare -a FILES_TO_SYMLINK=(
   'vim/vimrc'
   'zsh/alias'
   'zsh/export'
-  'zsh/function'
   'zsh/path'
   'zsh/zshrc'
 )

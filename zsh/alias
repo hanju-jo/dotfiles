@@ -8,8 +8,6 @@
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #-------------------------------------------------------------------------------
 
-alias vim='/usr/local/Cellar/vim/8.0.1400_1/bin/vim'
-
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 

@@ -88,7 +88,15 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 #-------------------------------------------------------------------------------
 
-plugins=(git python alias-tips)
+plugins=(
+    git
+    python
+    alias-tips
+    fzf
+    fasd
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
 
 #-------------------------------------------------------------------------------
 # Activate Oh-My-Zsh
@@ -120,8 +128,6 @@ BULLETTRAIN_PROMPT_ORDER=(
   dir
   git
   virtualenv
-  nvm
-  go
   status
 )
 BULLETTRAIN_TIME_BG=black
@@ -129,5 +135,5 @@ BULLETTRAIN_TIME_FG=white
 BULLETTRAIN_STATUS_EXIT_SHOW=true
 BULLETTRAIN_VIRTUALENV_FG=black
 BULLETTRAIN_VIRTUALENV_PREFIX="🐍 "
-BULLETTRAIN_NVM_FG=black
 BULLETTRAIN_DIR_EXTENDED=0
+
