@@ -1,39 +1,25 @@
-#-------------------------------------------------------------------------------
-# Local bin directories before anything else
-#-------------------------------------------------------------------------------
-
+# System default
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-#-------------------------------------------------------------------------------
-# Load Node global installed binaries
-#-------------------------------------------------------------------------------
+# yarn
+export PATH="$HOME/.yarn/bin:$PATH"
 
-export PATH="/usr/local/Cellar/node/8.0.0_1/bin:$PATH"
-
-#-------------------------------------------------------------------------------
 # PostgreSQL
-#-------------------------------------------------------------------------------
-
 export PATH="/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH"
 
-#-------------------------------------------------------------------------------
 # Pyenv
-#-------------------------------------------------------------------------------
-
 export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv:$PATH"
+eval "$(pyenv init -)"
 
-#-------------------------------------------------------------------------------
 # Go
-#-------------------------------------------------------------------------------
-
 export GOROOT="/usr/local/Cellar/go/1.9.2/libexec"
 export PATH="$GOROOT/bin:$PATH"
 export GOPATH="$HOME/workspace/go"
 export PATH="$GOPATH/bin:$PATH"
 
-
-#-------------------------------------------------------------------------------
 # Rust
-#-------------------------------------------------------------------------------
-
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Node.js
+export PATH="/usr/local/opt/node@10/bin:$PATH"
